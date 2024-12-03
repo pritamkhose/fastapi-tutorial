@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "d4f7a3e4-35af-42b4-8af0-2cd7701d62bd",
+		"name": "FastAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24846376"
+	},
+	"item": [
+		{
+			"name": "POST body",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Foo\",\r\n    \"description\": \"An optional description\",\r\n    \"price\": 45.2,\r\n    \"tax\": 3.50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/body/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"body",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put body",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"item\": {\r\n        \"name\": \"Foo\",\r\n        \"description\": \"The pretender\",\r\n        \"price\": 42.0,\r\n        \"tax\": 3.2\r\n    },\r\n    \"user\": {\r\n        \"username\": \"dave\",\r\n        \"full_name\": \"Dave Grohl\"\r\n    },\r\n    \"importance\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/body/45?q=s",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"body",
+						"45"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "s"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put image",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Foo\",\r\n    \"description\": \"The pretender\",\r\n    \"price\": 42.0,\r\n    \"tax\": 3.2,\r\n    \"tags\": [\"rock\", \"metal\", \"bar\"],\r\n    \"image\": {\r\n        \"url\": \"http://example.com/baz.jpg\",\r\n        \"name\": \"The Foo live\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/image/45",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"image",
+						"45"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

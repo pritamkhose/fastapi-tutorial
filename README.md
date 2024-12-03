@@ -6,6 +6,9 @@
 To start, run the following command from project:
 
 ```bash
+pip3 --version
+python3 -m pip install --upgrade pip
+
 python3 -m venv .venv
 source .venv/bin/activate
 
@@ -38,3 +41,6 @@ docker images -a
 
 docker compose up --build
 ```
+
+## Reference Link
+- [Fast API docs](https://fastapi.tiangolo.com/tutorial/path-params/)
