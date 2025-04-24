@@ -3,7 +3,7 @@ anyio==4.6.2.post1
 click==8.1.7
 exceptiongroup==1.2.2
 fastapi==0.115.5
-h11==0.14.0
+h11==0.16.0
 idna==3.10
 pydantic==2.10.2
 pydantic_core==2.27.1
